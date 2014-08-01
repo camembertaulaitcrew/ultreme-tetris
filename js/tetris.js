@@ -5,22 +5,30 @@ var interval;
 var current; // current moving shape
 var currentX, currentY; // position of current shape
 var shapes = [
-    [ 1, 1, 1, 1 ],
-    [ 1, 1, 1, 0,
-      1 ],
-    [ 1, 1, 1, 0,
-      0, 0, 1 ],
-    [ 1, 1, 0, 0,
-      1, 1 ],
-    [ 1, 1, 0, 0,
-      0, 1, 1 ],
-    [ 0, 1, 1, 0,
-      1, 1 ],
-    [ 0, 1, 0, 0,
-      1, 1, 1 ]
+    [ 0, 1, 0, 0],
+    [ 0, 1, 1, 0],
+    [ 1, 0, 0, 1],
+    [ 1, 0, 1, 1],
+    [ 1, 1, 1, 1,
+      1, 0, 0, 0,
+      1, 0, 0, 0,
+      1, 0, 0, 0],
+    [ 1, 0, 0, 1,
+      0, 0, 0, 0,
+      0, 0, 0, 0,
+      1, 0, 0, 1],
+    [ 1, 0, 0, 0,
+      0, 1, 0, 0,
+      0, 0, 1, 0,
+      0, 0, 0, 1],
+    [ 1, 0, 0, 1,
+      1, 1, 0, 1,
+      1, 0, 1, 1,
+      1, 0, 0, 1],
+
 ];
 var colors = [
-    'cyan', 'orange', 'blue', 'yellow', 'red', 'green', 'purple'
+    'cyan', 'orange', 'blue', 'yellow', 'red', 'green', 'purple', 'magenta',
 ];
 
 // creates a new 4x4 shape in global variable 'current'
